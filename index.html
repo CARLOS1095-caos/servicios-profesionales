@@ -43,20 +43,14 @@ header p {
    BOTÓN WHATSAPP FLOTANTE
 ============================ */
 .btn-whatsapp {
-  position: fixed;
-  bottom: 25px;
-  right: 25px;
-  z-index: 1000;
-
-  display: inline-block;
-  padding: 20px 25px;
+  display: block;
+  padding: 15px 25px;
   background: #25D366;
   color: white;
+  font-weight: bold;
   text-decoration: none;
   border-radius: 50px;
-  font-size: 18px;
-  font-weight: bold;
-  box-shadow: 0 4px 10px rgba(0,0,0,0.2);
+  box-shadow: 0 4px 6px rgba(0,0,0,0.3);
   transition: transform 0.2s;
 }
 
@@ -167,12 +161,14 @@ header p {
 </header>
 
 <!-- BOTÓN WHATSAPP FLOTANTE -->
-<a class="btn-whatsapp" 
-   href="https://wa.me/593980318281?text=Hola%20Ing.%20Carlos%20Ochoa%20Saez,%20necesito%20mas%20información%20sobre%20sus%20servicios%20profesionales." 
-   target="_blank">
-   Escribirme por WhatsApp
-</a>
-
+<div style="position: fixed; bottom: 20px; right: 20px; z-index: 1000;">
+  <a class="btn-whatsapp" 
+     href="https://wa.me/593980318281?text=Hola%20Ing.%20Carlos%20Ochoa%20Saez,%20necesito%20mas%20información%20sobre%20sus%20servicios%20profesionales." 
+     target="_blank">
+     WhatsApp
+  </a>
+</div>
+   
 <!-- SERVICIOS -->
 <div class="servicios">
 
