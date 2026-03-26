@@ -116,19 +116,24 @@ header p {
 /* ============================
    FOOTER
 ============================ */
-.footer {
-  width: 100%;
-  background: #0a66c2;
-  color: white;
-  padding: 25px 10px;
-  margin-top: auto;
-}
-
 .footer-content {
-  max-width: 500px;
+  max-width: 600px;
   margin: auto;
   text-align: center;
-  line-height: 1.6;
+}
+
+.info-items {
+  display: flex;
+  flex-wrap: wrap;        /* permite que los elementos bajen de línea si la pantalla es pequeña */
+  justify-content: center; /* centra los elementos horizontalmente */
+  gap: 20px;               /* espacio entre cada elemento */
+  margin-top: 10px;
+}
+
+.info-items p {
+  margin: 0;
+  font-size: 14px;
+  color: white;
 }
 
 /* ============================
@@ -188,9 +193,11 @@ header p {
 <footer class="footer">
   <div class="footer-content">
     <h3>Información del Profesional</h3>
-    <p>📍 Loja, Ecuador</p>
-    <p>📞 0980318281</p>
-    <p>📧 carlosochoasaez23@email.com</p>
+    <div class="info-items">
+      <p>📍 Loja, Ecuador</p>
+      <p>📞 0980318281</p>
+      <p>📧 carlosochoasaez23@email.com</p>
+    </div>
   </div>
 </footer>
   
